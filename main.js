@@ -1,0 +1,24 @@
+const searchBar = document.getElementById('additem')
+const addButton = document.getElementById('add')
+const todoItemList = document.getElementById('todoitems')
+
+addButton.addEventListener('click',(e)=>{
+    
+    let searchbarValue = searchBar.value 
+    if(searchbarValue !== ""){
+        const todoElements = document.createElement('p')
+    todoElements.append(searchbarValue)
+    todoElements.style.color = 'red'
+    todoItemList.appendChild(todoElements)
+    searchBar.value = ""
+    todoElements.addEventListener('click',()=>{
+        todoElements.style.textDecoration = 'line-through'
+        todoElements.style.color = 'green'
+    })
+    todoElements.addEventListener('dblclick',()=>{
+        todoItemList.removeChild(todoElements)
+    })
+    }
+
+    
+})
