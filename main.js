@@ -8,7 +8,7 @@ addButton.addEventListener('click',(e)=>{
     if(searchbarValue.length > 0){
         const todoElements = document.createElement('p')
     todoElements.append(searchbarValue)
-    todoElements.style.color = 'red'
+    todoElements.style.color = 'black'
     todoItemList.appendChild(todoElements)
     searchBar.value = ""
     todoElements.addEventListener('click',()=>{
