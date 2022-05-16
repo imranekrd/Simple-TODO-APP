@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(53, 48, 128);
+}
+
+#additem{
+    position: absolute;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    width: 400px;
+    height: 28px;
+    color: rgb(0, 0, 0);
+    top: 10%;
+    background-color: rgb(109, 108, 119);
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#add{
+    font-weight: bold;
+    width: 50px;
+    height: 35px;
+    background-color: rgb(189, 181, 197);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+#todoitems{
+    border-color: black;
+    font-size: 40px;
+    position: absolute;
+    height: 400px;
+    width: 250px;
+    top: 35%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+#todoitems > p{
+    font-weight: bold;
+    border-style: dashed;
+    background-color: rgb(203, 203, 132);
+}
