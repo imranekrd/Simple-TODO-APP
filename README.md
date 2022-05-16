@@ -1,5 +1,5 @@
 # Simple-TODO-APP
  
- ## https://simpletodoappied.netlify.app/
+ ## https://simpletodobyme.netlify.app/
  
  ### 2 click for deleting.
