@@ -6,18 +6,17 @@ addButton.addEventListener('click',(e)=>{
     
     let searchbarValue = searchBar.value 
     if(searchbarValue.length > 0){
-        console.log(searchbarValue.length)
         const todoElements = document.createElement('p')
-    todoElements.append(searchbarValue)
-    todoElements.style.color = 'red'
-    todoItemList.appendChild(todoElements)
-    searchBar.value = ""
-    todoElements.addEventListener('click',()=>{
-        todoElements.style.textDecoration = 'line-through'
-        todoElements.style.color = 'green'
+        todoElements.append(searchbarValue)
+        todoElements.style.color = 'red'
+        todoItemList.appendChild(todoElements)
+        searchBar.value = ""
+        todoElements.addEventListener('click',()=>{
+            todoElements.style.textDecoration = 'line-through'
+            todoElements.style.color = 'green'
     })
-    todoElements.addEventListener('dblclick',()=>{
-        todoItemList.removeChild(todoElements)
+        todoElements.addEventListener('dblclick',()=>{
+            todoItemList.removeChild(todoElements)
     })
     }
 
